@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML | CSS | JS</title>
+    <link rel="icon" href="img/html5.ico" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="startup.logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#startupNavbar" aria-controls="startupNavbar"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="startupNavbar">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="#">Sign in</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div id="hero-caption">
+            <h1 class="display-3">Republic Of Gamers</p>
+            <form action="" class="form-inline justify-content-center">
+                <div class="form-group mb-2">
+                    <label class="sr-only" for="name">Name</label>
+                    <input id="name" name="name" type="text" class="form-control form-control-lg" placeholder="Ocean Life">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label class="sr-only" for="email">Email</label>
+                    <input id="email" name="name" type="email" class="form-control form-control-lg" placeholder="Ocean@example.com">
+                </div>
+                <button type="submit" class="btn btn-success btn-lg mb-2">Okay, go!</button>
+            </form>
+            <!-- <a href="" class="btn btn-lg btn-success">Sign up now</a> -->
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/transformer-card.jpg" alt="transformers">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/starwars-card.jpg" alt="Star wars">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top" src="img/dragon-nest-card.jpg" alt="Dragon Nest">
+                        <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-home" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-home" data-slide-to="1"></li>
+                <li data-target="#carousel-home" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/battleground-carousel.jpg" alt="Battleground">
+
+                    <div class="carousel-caption">
+                        <h3>A woman with a camera</h3>
+                        <p>She is probably taking a picture.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/world-of-warcraft-carousel.jpg" alt="World of warcraft">
+
+                    <div class="carousel-caption">
+                        <h3>Down came the rain</h3>
+                        <p>And washed the spider out.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/tom-raider-carousel.jpg" alt="Tom raider">
+
+                    <div class="carousel-caption">
+                        <h3>Making love</h3>
+                        <p>With their hands...</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel-home" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-home" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="news">
+        <div class="section-content">
+            <div class="container">
+                <h3>Latest news</h3>
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad sint vero quidem corporis aperiam optio dicta
+                    odio eveniet debitis quam dolorum ipsa praesentium blanditiis, recusandae pariatur ipsum? Dicta, vitae
+                    nesciunt.
+                </p>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="card-columns">
+                            <div class="card">
+                                <img class="card-img-top" src="img/sword-art-card.jpg" alt="Sword art">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title that wraps to a new line</h5>
+                                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.
+                                        This content is a little bit longer.</p>
+                                </div>
+                            </div>
+                            <div class="card p-3">
+                                <blockquote class="blockquote mb-0 card-body">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Someone famous in
+                                            <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card">
+                                <img class="card-img-top" src="img/wow-card.jpg" alt="World of warcraft">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card bg-primary text-white text-center p-3">
+                                <blockquote class="blockquote mb-0">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
+                                    <footer class="blockquote-footer">
+                                        <small>
+                                            Someone famous in
+                                            <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img class="card-img" src="img/guildwars-card.jpg" alt="guild wars">
+                            </div>
+                            <div class="card p-3 text-right bg-warning">
+                                <blockquote class="blockquote mb-0 text-white">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                                    <footer class="blockquote-footer">
+                                        <small class="text-muted">
+                                            Someone famous in
+                                            <cite title="Source Title">Source Title</cite>
+                                        </small>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.
+                                        This card has even longer content than the first to show that equal height action.</p>
+                                    <p class="card-text">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">1</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">2</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">3</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">4</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#">5</a>
+                                </li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <p>Uncopyright 2015. Do what you want.</p>
+                    <p>Coded by <a href="#">Ocean</a></p>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li><a href="#cover">Home</a></li>
+                        <li><a href="#carousel">Carousel</a></li>
+                        <li><a href="#what-we-do">What to do</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#news">Latest</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="list-unstyled">
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">twitter</a></li>
+                        <li><a href="">youtube</a></li>
+                        <li><a href="">likedin</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                        <h6>A tiny header</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores placeat consequatur tenetur numquam et quae commodi expedita, quas maiores a asperiores, voluptatem quidem atque illo. Quo consequuntur in beatae quas.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Mason &amp; Daughters</h1>
+                <p class="lead text-white">Something short and leading about the collection below—its contents, the creator, etc. Make it short and
+                    sweet, but not too short so folks don't simply skip over it entirely.</p>
+                <div>
+                    <a href="#" class="btn btn-info my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </div>
+            </div>
+        </section> -->
+
+    <!-- We should add scripts at end, so to make sure that markups get loaded first -->
+    <!-- Make sure you are maintaining order while defining scripts tags -->
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
