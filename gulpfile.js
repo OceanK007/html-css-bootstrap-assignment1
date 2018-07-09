@@ -9,6 +9,7 @@ var server = http.createServer(function(request,response)
 });
 server.listen(8080);
 
+// *** Command to convert .scss to .css file *** //
 // To add all .scss file: src/scss/*.scss
 gulp.task('sass', () => {
     return gulp 
@@ -18,6 +19,7 @@ gulp.task('sass', () => {
             .pipe(browserSync.stream());
 });
 
+// *** Command to copy bootstrap, jquery, popper.js to "src/js" folder *** //
 gulp.task('js', () => {
     return gulp
     .src(['node_modules/bootstrap/dist/js/bootstrap.js','node_modules/jquery/dist/jquery.js','node_modules/popper.js/dist/popper.js'])
@@ -25,6 +27,7 @@ gulp.task('js', () => {
     .pipe(browserSync.stream())
 });
 
+// *** Command to watch for any change happens in .scss or .html file ****//
 gulp.task('serve', ['sass'], () => {
     browserSync.init
     ({
