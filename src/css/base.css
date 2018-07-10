@@ -1,0 +1,116 @@
+.blockquote {
+  font-size: 1.6rem;
+  color: #333;
+  border: none;
+  padding: 0; }
+
+.blockquote-footer {
+  margin: 1rem 0 0; }
+
+/* Navigation section - Component1 */
+#header img {
+  width: 10rem; }
+
+/* Hero section */
+#hero {
+  background: url("../img/hero.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 62px; }
+
+#hero-caption {
+  font-size: 1.4rem;
+  font-weight: 200;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center; }
+
+#hero-caption h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  text-transform: uppercase; }
+
+#startupNavbar ul li a {
+  color: rgba(0, 0, 0, 0.9); }
+
+/* Card section with pagination */
+.section-content {
+  /* padding:80px 0; */
+  /* 1rem = 16px (font size of page. Default font size is 16px) */
+  padding: 5rem 0; }
+
+/* Pagination */
+.pagination a {
+  color: #5c5cd6; }
+
+/* Footer section */
+#footer-main {
+  background: #222;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2.5rem 0; }
+
+.blockquote-footer {
+  color: #333; }
+
+.footer-bg-custom {
+  background-color: #6699ff !important; }
+
+#footer-main a {
+  color: #3399ff !important; }
+
+/* Jumbotron -Component2 */
+/* :root 
+{
+    --jumbotron-padding-y: 3rem;
+}
+  
+.jumbotron 
+{
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url('../img/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+@media (min-width: 768px) 
+{
+    .jumbotron 
+    {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+  
+.jumbotron p:last-child 
+{
+    margin-bottom: 0;
+}
+  
+.jumbotron-heading 
+{
+    font-weight: 300;
+} 
+  
+.jumbotron .container 
+{
+    max-width: 40rem;
+    background: rgba(255,255,255,0.2);
+    padding:2rem;
+    color:white;
+}
+  
+.jumbotron p
+{
+    color:white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+} */
